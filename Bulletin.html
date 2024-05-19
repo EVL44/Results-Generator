@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bulletin</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bulletin.css">
+    <link rel="icon" href="images/icon.png">     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="Bulletin.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="box">
+            <legend> Bulletin </legend>
+            <div class="input-box">  
+                <input type="text" id="fname" required>
+                <label>First Name</label>
+            </div>
+                
+            <div class="input-box"> 
+                <input type="text" id="lname" required>
+                <label>Last Name</label> 
+            </div>
+
+            <div class="input-box"> 
+                <input type="text" id="CNE" required>
+                <label>CNE</label> 
+            </div>
+
+            <div class="input-box"> 
+                <input type="number" id="db1" required> 
+                <label>Data Base 1</label> 
+            </div>
+            
+            <div class="input-box"> 
+                <input type="number" id="db2" required> 
+                <label>Data Base 2</label> 
+            </div>
+
+            <div class="input-box"> 
+                <input type="number" id="ds1" required> 
+                <label>Data Structure</label> 
+            </div>
+            
+            <div class="input-box"> 
+                <input type="number" id="ds2" required> 
+                <label>Dev Web</label> 
+            </div>
+
+            <div class="input-box"> 
+                <input type="number" id="os1" required> 
+                <label>Operating sys</label> 
+            </div>
+            
+            <div class="input-box"> 
+                <input type="number" id="os2" required> 
+                <label>Network</label> 
+            </div>
+
+            <div class="input-box"> 
+                <input type="number" id="mt1" required> 
+                <label>Math 1</label> 
+            </div>
+            
+            <div class="input-box"> 
+                <input type="number" id="mt2" required> 
+                <label>Math 2</label> 
+            </div>
+                
+            <button class="done" onclick="ShowInfos()">Done</button>
+        </div>    
+    </div>
+    
+    <div class="tbl" id="capture" style="padding: 10px;">
+
+        <div class="infos">
+            <div id="fn"></div>
+            <div id="ln"></div>
+            <div id="code"></div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subjects</th>
+                    <th>1<sup>st</sup> note</th>
+                    <th>2<sup>nd</sup> note</th>
+                    <th>Averge</th>
+                </tr>          
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Base</td>
+                    <td> <div id="dataBase1"></div> </td>
+                    <td> <div id="dataBase2"></div> </td>
+                    <td> <div id="dataBaseAvrg"></div> </td>
+                </tr>
+                <tr>
+                    <td>Data Structure & Web Development</td>
+                    <td> <div id="dataStruct1"></div> </td>
+                    <td> <div id="dataStruct2"></div> </td>
+                    <td> <div id="dataStructAvrg"></div> </td>
+                </tr>
+                <tr>
+                    <td>Operating System & Network</td>
+                    <td> <div id="opSys1"></div> </td>
+                    <td> <div id="opSys2"></div> </td>
+                    <td> <div id="opSysAvrg"></div> </td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td> <div id="math1"></div> </td>
+                    <td> <div id="math2"></div> </td>
+                    <td> <div id="mathAvrg"></div> </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Average</td>
+                    <td> <div id="tAvrg"></div>  </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <div class="btns">
+        <button type="submit" class="download-clacul-btn" id="download" onclick="downloadPDF()" >Download PDF</button>
+        <button type="submit" class="download-clacul-btn"><a href="Calcul.html">Claculatrice</a></button>
+    </div>
+    
+
+</body>
+</html>

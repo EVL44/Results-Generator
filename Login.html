@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+    <script defer src="indix.js"></script>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <header>
+        <h2><a href="HomePage.html">ESTA</a></h2> 
+        <nav>
+            <ul class="Account">
+                <li><a href="HomePage.html" class="line">Home</a></li>
+                <li><a href="#" class="line">Contact</a></li>
+                <li><a href="#" class="line">About</a></li>
+                <li><a href="login.html" class="both log">Log in</a></li>
+                <li><a href="signup.html" class="both">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <form method="post">
+            <fieldset>
+                <legend>Log In</legend>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="username" name="username" required>
+                    <label>Username</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="remember">
+                    <label><input type="checkbox"> remember me</label>
+                </div>
+                
+                <button type="submit" class="btn" onclick="checkData()">Log in</button>
+
+                <div class="regester-link">
+                    <p> Don't have an account?  <a href="Signup.html"> Register</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+     
+    <footer>
+        <img src="images/logo.png" alt="logo" class="logo">
+    </footer>
+
+    <script src="Login.js"></script>
+</body>
+</html>

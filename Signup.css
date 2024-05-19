@@ -1,0 +1,206 @@
+*{
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;   
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    background-color: #000;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.5s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: rgb(31, 30, 30);
+}
+
+.logo {
+    margin-top: 60px;
+    width: 170px;
+    height: 100px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    background: url(images/sideImage.jpg)no-repeat;
+    width: 50%;
+    height: 110vh;
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    width: 500px;
+    height: 100vh; 
+    margin-bottom: 9vh;
+    padding: 30px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+legend{
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #000;
+    margin: 20px 0;
+    
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+
+.dob {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.dob label {
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+.dob input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-weight: 600;
+}
+
+
+.gender {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 50px 0;
+}
+
+.gender label {
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.gender select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-weight: 600;
+}
+
+.login-link {
+    font-size: 0.9em;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.login-link p a {
+    color: #000;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}

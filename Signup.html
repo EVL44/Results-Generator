@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/f09ece475a.js" crossorigin="anonymous"></script>
+    <script defer src="indix.js"></script>
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+
+    <div class="box">
+        <div class="content">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <form action="Login.html">
+                <legend> Register </legend>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person" style="color: #000;"></ion-icon></span>
+                    <input type="text" id="username" name="username"required>
+                    <label>Username</label>  
+                </div>
+                        
+                <div class="dob">
+                    <label>Date Of Birth</label>
+                    <input type="date" id="db" required>
+                </div>
+
+                <div class="gender">
+                    <label>Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option value="">select your gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="call" style="color: #000;"></ion-icon></ion-icon></span>
+                    <input type="number" id="Tel" name="Tel" required>
+                    <label>Tel Number</label> 
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail" style="color: #000;"></ion-icon></ion-icon></span>
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label> 
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed" style="color: #000;"></ion-icon></ion-icon></span>
+                    <input type="password" id="password" name="password" required>
+                    <label>Password</label> 
+                </div>       
+            
+                <button type="submit" onclick="saveData()" class="btn">Sign up</button>
+                <div class="login-link">
+                <p> Already have an account?  <a href="Login.html"> Login</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="img">
+        </div>
+    </div>
+
+    <script src="Signup.js"></script>
+</body>
+</html>
