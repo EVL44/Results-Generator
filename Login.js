@@ -1,20 +1,18 @@
+
 function checkData() {
-    let enterUsername = document.getElementById('username').value;
-    let enterPassword = document.getElementById('password').value;
+    const enteredUsername = document.getElementById('username').value;
+    const enteredPassword = document.getElementById('password').value;
 
-    let getUsername = localStorage.getItem('userName');
-    let getPassword = localStorage.getItem('userPassword');
+    let user = JSON.parse(localStorage.getItem("user"));
 
-    if ( enterUsername == getUsername ) {
-        if ( enterPassword == getPassword ) {          
-            window.location.assign('Bulletin.html');
-            alert('Login Succesfully !');
-        } else {
-            alert('wrong password !');
-            return;
-        }
+    if (enteredUsername === user.username && enteredPassword === user.password) {
+        alert('Login Successfully!');
+        setTimeout(() => {
+            window.location.href = "Bulletin.html";
+        }, 5000);
+
     } else {
-        alert('innvalid details !');
-        return;
+        alert('Invalid details!');
+        console.log("Invalid details entered");
     }
 }
